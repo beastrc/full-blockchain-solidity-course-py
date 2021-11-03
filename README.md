@@ -17,7 +17,6 @@ Welcome to the repository for the Ultimate Solidity, Blockchain, and Smart Contr
 - [Table of Contents](#table-of-contents)
 - [Resources For This Course](#resources-for-this-course)
     - [Questions](#questions)
-    - [Windows Support](#windows-support)
 - [Lesson 0: Welcome To Blockchain](#lesson-0-welcome-to-blockchain)
   - [What is a Blockchain?](#what-is-a-blockchain)
   - [Making Your First Transaction](#making-your-first-transaction)
@@ -96,10 +95,6 @@ Welcome to the repository for the Ultimate Solidity, Blockchain, and Smart Contr
   - Great place for asking technical questions about Ethereum
 - [StackOverflow](https://stackoverflow.com/)
   - Great place for asking technical questions overall
-
-### Windows Support
-- [Setup your windows environment](https://medium.com/@cromewar/how-to-setup-windows-10-11-for-smart-contract-development-and-brownie-e7d8d13555b3)
-  - Learn how to install all the tools you will need for this course on a windows machine
 
 # Lesson 0: Welcome To Blockchain
 ## What is a Blockchain?
@@ -724,6 +719,7 @@ Welcome to the repository for the Ultimate Solidity, Blockchain, and Smart Contr
   - Deploying TokenFarm
   - Adding allowed tokens
 - [ERC20 Kovan Faucet](https://erc20faucet.com/)
+- If the link above does not work, you can get another ERC20 token using this faucet: [Weenus ERC20 Faucet](https://github.com/bokkypoobah/WeenusTokenFaucet)
 - Mocking our ERC20s
 ### Testing our Defi Stake Yield Brownie Dapp
 - `test_set_price_feed_contract`
