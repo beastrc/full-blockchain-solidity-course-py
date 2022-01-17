@@ -67,6 +67,11 @@ transaction = SimpleStorage.constructor().buildTransaction(
     }
 )
 ```
+- [3:56:20](https://youtu.be/M576WGiDBdQ?t=13372) Colorized Brackets.
+  * The referenced extension has been deprecated due to VS code adding native functionality. To enable the new setting search for `bracket` and check the checkbox below:
+  `Editor > Bracket Pair Colorization:` **Enabled**
+
+    ![image](https://user-images.githubusercontent.com/2119741/147293025-4dec848b-747b-4da7-9009-3f9174198b54.png)
 
 ## Lesson 7
 - [8:06:54ish](https://youtu.be/M576WGiDBdQ?t=29214)
@@ -82,3 +87,14 @@ transaction = SimpleStorage.constructor().buildTransaction(
 
 ## Lesson 10
 - The Aave testnet site has moved from `https://testnet.aave.com` to `https://staging.aave.com` and some of the functionality is lost :( 
+- For our `repay_all` function, we originally had:
+```python
+repay_all(AMOUNT, lending_pool, account)
+```
+
+But it should be:
+
+```
+repay_all(Web3.toWei(amount_dai_to_borrow, "ether"), lending_pool, account)
+```
+We want to pay back the DAI not the ETH! Just remember, you'll still have a vveerrrryyyy small amount of DAI borrowed because of interest. If you see something with an `E` in it, you did it right!
