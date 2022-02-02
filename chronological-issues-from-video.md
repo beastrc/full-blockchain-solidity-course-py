@@ -38,12 +38,6 @@ Or whatever version your `@chainlink` and `@openzeppelin` contracts need. For ex
 ## Integration Testing Issues
 - In some integration tests, we do something like `time.sleep(60)`. Sometimes, you'll have to do much longer, we've had reports go up to `time.sleep(300)`. So, if you want to try that, go get a coffee break while your integration test runs!
 
-## Python related issues
-- In some environments Web3.py may not work due to the **Cytools** error, which means your computer lacks some `C` language libraries in order to execute. 
-
-  [Here](https://medium.com/@cromewar/the-mighty-cytools-error-at-web3-smart-contract-development-with-brownie-63335d50f230) you can find a detailed guide about how to solve the problem.
-
-
 ## Lesson 3:
 - [2:37:05](https://youtu.be/M576WGiDBdQ?t=9425) Kovan vs Rinkeby
   - Our `FundMe.sol` needs to be deployed to the *rinkeby* chain to work, but if you go to try the price feeds from the Chainlink docs using the remix link, that one has the *kovan* price feeds in it, so needs to be deployed to kovan. 
@@ -78,6 +72,23 @@ transaction = SimpleStorage.constructor().buildTransaction(
   `Editor > Bracket Pair Colorization:` **Enabled**
 
     ![image](https://user-images.githubusercontent.com/2119741/147293025-4dec848b-747b-4da7-9009-3f9174198b54.png)
+
+- [3:55:09](https://youtu.be/M576WGiDBdQ?t=14109) Confusing network ID and chain ID
+  - In the video the network ID is copied instead of the chain id. 
+Whenever the terms Network ID and Chain ID are used without distinction, it should be noted that both IDs can be different for a server such as Ganache. As you can see here, Ganache can be using different IDs.
+
+```
+>>> from web3 import Web3
+>>> w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545"))
+>>> w3.eth.chain_id
+1337
+>>> w3.net.version
+'5777'
+>>> 
+```
+
+One possibility is setting the chain_id programmatically.
+`"chainId": w3.eth.chain_id, `   
 
 ## Lesson 7
 - [8:06:54ish](https://youtu.be/M576WGiDBdQ?t=29214)
