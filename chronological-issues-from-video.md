@@ -31,9 +31,11 @@ In your vscode, these and be safely ignored. However you can also add to your se
 }
 ```
 
+
 Or whatever version your `@chainlink` and `@openzeppelin` contracts need. For example:
 <img width="1190" alt="Screen Shot 2021-10-05 at 6 01 45 PM" src="https://user-images.githubusercontent.com/54278053/136108868-15739283-0789-4ce1-bf4a-7491ea4b7c2e.png">
 
+**Note:** remember this is an example, you must provide the actual location on which your `.brownie` folder is located. For more info on on this please refer [here](https://n4n0b1t3.medium.com/how-to-make-vsc-solidity-lint-recognize-your-chainlink-and-openzeppelin-libraries-73775129261c).
 
 ## Integration Testing Issues
 - In some integration tests, we do something like `time.sleep(60)`. Sometimes, you'll have to do much longer, we've had reports go up to `time.sleep(300)`. So, if you want to try that, go get a coffee break while your integration test runs!
@@ -72,21 +74,6 @@ transaction = SimpleStorage.constructor().buildTransaction(
   `Editor > Bracket Pair Colorization:` **Enabled**
 
     ![image](https://user-images.githubusercontent.com/2119741/147293025-4dec848b-747b-4da7-9009-3f9174198b54.png)
-
-- [3:55:09](https://youtu.be/M576WGiDBdQ?t=14109) Confusing network ID and chain ID
-  - In the video the network ID is copied instead of the chain id. 
-Whenever the terms Network ID and Chain ID are used without distinction, it should be noted that both IDs can be different for a server such as Ganache. As you can see here, Ganache can be using different IDs.
-
-```
->>> from web3 import Web3
->>> w3 = Web3(Web3.HTTPProvider("http://127.0.0.1:8545"))
->>> w3.eth.chain_id
-1337
->>> w3.net.version
-'5777'
->>> 
-```
-
 
 ## Lesson 7
 - [8:06:54ish](https://youtu.be/M576WGiDBdQ?t=29214)
