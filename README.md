@@ -18,6 +18,7 @@ Welcome to the repository for the Ultimate Solidity, Blockchain, and Smart Contr
 - [Resources For This Course](#resources-for-this-course)
     - [Questions](#questions)
     - [Windows Support](#windows-support)
+    - [Hiccups/Issues from the Video](#hiccupsissues-from-the-video)
 - [Lesson 0: Welcome To Blockchain](#lesson-0-welcome-to-blockchain)
   - [What is a Blockchain?](#what-is-a-blockchain)
   - [Making Your First Transaction](#making-your-first-transaction)
@@ -100,6 +101,10 @@ Welcome to the repository for the Ultimate Solidity, Blockchain, and Smart Contr
 ### Windows Support
 - [Setup your windows environment](https://medium.com/@cromewar/how-to-setup-windows-10-11-for-smart-contract-development-and-brownie-e7d8d13555b3)
   - Learn how to install all the tools you will need for this course on a windows machine
+
+### Hiccups/Issues from the Video
+- [Chronological Issues from the Video](https://github.com/smartcontractkit/full-blockchain-solidity-course-py/blob/main/chronological-issues-from-video.md)
+    - A list of known hiccups/issues you may encounter while implementing the content from the video
 
 # Lesson 0: Welcome To Blockchain
 ## What is a Blockchain?
@@ -777,7 +782,7 @@ Shoutout to [Matt](https://twitter.com/mdurkin92) for the help on the front end!
 # Closing and Summary
 ## Security
 - [Best Practices](https://consensys.github.io/smart-contract-best-practices/)
-- [Attacks](https://consensys.github.io/smart-contract-best-practices/known_attacks/)
+- [Attacks](https://consensys.github.io/smart-contract-best-practices/attacks/)
   - [Oracle Attacks](https://hackernoon.com/how-dollar100m-got-stolen-from-defi-in-2021-price-oracle-manipulation-and-flash-loan-attacks-explained-3n6q33r1)
   - [Re-entrancy Attacks](https://quantstamp.com/blog/what-is-a-re-entrancy-attack)
 - [Damn Vulnerable Defi](https://www.damnvulnerabledefi.xyz/)
